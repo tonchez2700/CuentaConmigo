@@ -7,11 +7,6 @@ import { Provider as RegistrationProvider } from '../context/RegistrationContext
 import { Context as AuthContext } from '../context/AuthContext';
 
 import HomeScreen from './HomeScreen';
-import RegisterHomeScreen from './RegisterHomeScreen';
-import ExpedienteRegistrationScreen from './ExpedienteRegistrationScreen';
-import RegisterScreen from './RegisterScreen';
-import PhotoScreen from './PhotoScreen';
-import SurgeryScreen from './Shopping/SurgeryScreen';
 
 import ShoppingHome from './Shopping/ShoppingHome';
 
@@ -66,12 +61,6 @@ const WrapperInnerScreens = () => {
                     initialRouteName='HomeScreen'
                     useLegacyImplementation>
                     <Drawer.Screen name="HomeScreen" component={HomeScreen} />
-                    <Drawer.Screen name="RegisterHomeScreen" component={RegisterHomeScreen} />
-                    <Drawer.Screen name="RegisterScreen" component={RegisterScreen} />
-                    <Drawer.Screen name="ExpedienteRegistrationScreen" component={ExpedienteRegistrationScreen} />
-                    <Drawer.Screen name="PhotoScreen" component={PhotoScreen} />
-                    <Drawer.Screen name="ShoppingHome" component={ShoppingHome} />
-                    <Drawer.Screen name="SurgeryScreen" component={SurgeryScreen} />
                 </Drawer.Navigator>
             </RegistrationProvider>
         </SafeAreaView>

@@ -23,11 +23,7 @@ const AuthScreen = () => {
             <ScrollView contentContainerStyle={tw`items-center`}>
 
                 <SimpleNavBar />
-                <Image source={Images.logo} style={{
-                    marginTop: '10%',
-                    width: 700,
-                    height: 140,
-                }} />
+                
                 <Text style={[tw`text-3xl mt-10 font-bold`, { color: '#004480' }]}>Iniciar Sesión</Text>
                 <View style={tw`w-4/5 mt-8`}>
                     <InputForm

@@ -14,7 +14,7 @@ const InputForm = ({ name, placeholder, ...otherProps }) => {
                     placeholder={placeholder}
                     name={name}
                     autoautoCapitalize='characters'
-                    inputStyle={{fontSize: 24}}
+                    inputStyle={{fontSize: 14}}
                     {...otherProps}
                 />
 
