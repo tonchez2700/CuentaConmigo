@@ -7,8 +7,8 @@ import { Provider as RegistrationProvider } from '../context/RegistrationContext
 import { Context as AuthContext } from '../context/AuthContext';
 
 import HomeScreen from './HomeScreen';
-
-import ShoppingHome from './Shopping/ShoppingHome';
+import RegisterScreen from './RegisterScreen';
+import PhotoScreen from './PhotoScreen';
 
 import tw from 'tailwind-react-native-classnames';
 import Images from '@assets/images';
@@ -61,6 +61,8 @@ const WrapperInnerScreens = () => {
                     initialRouteName='HomeScreen'
                     useLegacyImplementation>
                     <Drawer.Screen name="HomeScreen" component={HomeScreen} />
+                    <Drawer.Screen name="RegisterScreen" component={RegisterScreen} />
+                    <Drawer.Screen name="PhotoScreen" component={PhotoScreen} />
                 </Drawer.Navigator>
             </RegistrationProvider>
         </SafeAreaView>

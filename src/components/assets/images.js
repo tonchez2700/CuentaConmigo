@@ -7,6 +7,8 @@ const images = {
     visa: require('./img/Visa_Logo.png'),
     oPaynet: require('./img/logo_header.png'),
     Cards: require('./img/tarjetas.png'),
+    iconGoogle: require('./img/icono_google.png'),
+    iconoFacebook: require('./img/iconoFacebook.png'),
     splash_background_image: require('./img/splash-background.jpg'),
     navBAr_Background: require('./img/NavBar-background.png'),
 

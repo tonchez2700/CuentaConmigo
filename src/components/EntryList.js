@@ -9,29 +9,28 @@ import moment from 'moment';
 const EntryList = ({ data, dalete, edit }) => {
 
     const navigation = useNavigation();
-    const sortedData = data.sort((a, b) => a.name.localeCompare(b.name));
+    const sortedData = data.sort((a, b) => a.nombre.localeCompare(b.nombre));
     return (
 
-        <View style={{ flex: 1, marginTop: '2%', borderBottomColor: 'gray', borderRadius: 5, elevation: 5, backgroundColor: 'white', borderBottomColor: 'white', borderTopWidth: 1 }}>
+        <View style={{ marginTop: '2%', borderBottomColor: 'gray', borderRadius: 5, elevation: 5, backgroundColor: 'white', }}>
             <FlatList
                 data={sortedData}
                 pagingEnabled={true}
                 refreshing={true}
+                keyExtractor={(item) => item.id.toString()}
                 removeClippedSubviews={true}
                 initialNumToRender={10}
                 renderItem={({ item }) =>
-                    <View style={{ flex: 1, backgroundColor: 'white', flexDirection: 'row', borderBottomWidth: 1, borderColor: '#00000029', padding: '2%'}}>
-                        <Text style={{ flex: 1, fontSize: 21 }}>{item.admissions.file_number}</Text>
-                        <Text style={{ flex: 2, fontSize: 21 }}>{item.name}{item.paternal_surname}{item.maternal_surname}</Text>
-                        <Text style={{ flex: 1, fontSize: 21 }}>{item.admissions.admission_date}</Text>
-                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-evenly' }}>
-                            <Icon name='edit' size={32} type='font-awesome' color='green' />
-                            <Icon name='trash-o' size={32} type='font-awesome' color='#FF0000' />
+                    <View style={{ flex: 1, backgroundColor: 'white', flexDirection: 'row', borderBottomWidth: 1, borderColor: '#00000029', padding: '2%' }}>
+                        <Text style={{ flex: 1, fontSize: 12 }}>{item.ine}</Text>
+                        <Text style={{ flex: 2, fontSize: 12 }}>{item.nombre}</Text>
+                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+                            <Icon name='eye' size={16} type='font-awesome-5' color='#6F1FB4' />
                         </View>
 
                     </View>
                 }
-                keyExtractor={(item) => item.id.toString()}
+
             />
         </View>
     )

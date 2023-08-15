@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "accelerium",
-    "slug": "accelerium",
+    "name": "SanCatarina",
+    "slug": "SanCatarina",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -33,14 +33,14 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.tonchez2700.accelerium"
+      "package": "com.tonchez2700.SanCatarina"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "b778938c-4d1d-422b-a6dd-90fdbc8ae3c7"
+        "projectId": "2c2deef7-8652-4daf-b0a3-af8c9db431e6"
       }
     }
   }

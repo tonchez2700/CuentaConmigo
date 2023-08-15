@@ -14,14 +14,14 @@ const NavBar = (navigation) => {
 
     return (
         <Header
-            backgroundColor="#012B54"
+            backgroundColor="#F08013"
             barStyle="default"
             containerStyle={{ height: 93 }}
             leftContainerStyle={{ justifyContent: 'center' }}
             rightContainerStyle={{ justifyContent: 'center' }}
             centerComponent={<Image source={Images.logo_header} style={{
                 width: '50%',
-                height: 55,
+                height: 40,
             }} />}
             rightComponent={
                 <TouchableOpacity
